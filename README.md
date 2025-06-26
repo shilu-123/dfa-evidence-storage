@@ -25,5 +25,5 @@ A decentralized and secure digital evidence storage system inspired by the DFA-A
 
 ---
 
-## 📂 Folder Structure
+
 

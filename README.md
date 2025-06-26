@@ -1,29 +1,104 @@
 # 🛡️ DFA Evidence Storage - Web3-Based Digital Forensics System
 
-A decentralized and secure digital evidence storage system inspired by the DFA-AOKGE model. This project allows digital evidence to be securely stored using IPFS and verified via Ethereum blockchain smart contracts, ensuring immutability and authenticity in forensic investigations.
+Secure, Decentralized & Verifiable Digital Evidence Management built on Blockchain and IPFS.
+
+![DFA Evidence Banner](./assets/banner.png) <!-- Optional: Add a banner image -->
 
 ---
 
- Features
+## 📌 About the Project
 
-- 🔒 **Authentication** using MetaMask wallet (Web3)
-- 📦 **Decentralized Storage** via IPFS
-- ⛓️ **Blockchain-based Record Keeping** using Ethereum Smart Contracts (Sepolia Testnet)
-- 📁 Upload & register digital evidence
-- ⏱️ Timestamped proof of evidence storage
-- 🔍 Evidence verification with hash and blockchain record
+In traditional digital forensic systems, digital evidence is often stored in centralized servers, making it vulnerable to tampering, unauthorized access, and single points of failure. These limitations can compromise legal investigations and the credibility of evidence in court.
+
+**DFA Evidence Storage** is a decentralized application (dApp) designed to revolutionize digital evidence management using Web3 technologies. It leverages:
+- **IPFS** for decentralized, immutable file storage
+- **Ethereum Smart Contracts** (Sepolia Testnet) for transparent and tamper-proof logging
+- **MetaMask** for wallet-based user authentication
+
+---
+
+## 💡 Problem Statement
+
+Digital forensic evidence stored in centralized systems is vulnerable to tampering, loss, and unauthorized access, making it unreliable in legal proceedings. There's a need for a secure, decentralized, and verifiable storage solution.
 
 ---
 
-## 🛠️ Tech Stack
+## ✅ Solution Highlights
 
-- **Frontend:** React.js
-- **Backend:** Node.js, Express.js
-- **Blockchain:** Solidity, Hardhat, MetaMask, Ethereum (Sepolia)
-- **Decentralized Storage:** IPFS (via Pinata or Infura)
-- **Smart Contract Interaction:** Web3.js / Ethers.js
+- 🔐 **MetaMask-Based Authentication**  
+  Ensures only verified users can interact with the system.
+
+- 📤 **Secure Evidence Upload**  
+  Evidence files are uploaded to IPFS using Pinata or Infura.
+
+- ⛓️ **Blockchain Record Keeping**  
+  Stores the IPFS hash + timestamp on Ethereum Sepolia via smart contracts.
+
+- 🔍 **Proof of Integrity**  
+  Verify any uploaded file’s hash and storage time using public blockchain.
+
+- 🧾 **Transparent Audit Trail**  
+  Every transaction is logged on-chain and viewable by the public.
 
 ---
+
+## 🚀 Key Features
+
+- 🧑‍💻 Decentralized Authentication via MetaMask
+- 📁 Upload & Register Evidence Files
+- 🧬 IPFS Storage via Pinata/Infura
+- ⛓️ Ethereum Smart Contract Logging
+- 🧠 Verifiable Hash & Timestamp Proof
+- 📜 Transparent & Tamper-Proof Audit Trail
+
+---
+
+## 🧱 Built With
+
+| Layer         | Technologies Used                                     |
+|---------------|--------------------------------------------------------|
+| **Frontend**  | React.js, Web3.js                                      |
+| **Backend**   | Node.js, Express.js                                    |
+| **Blockchain**| Solidity, Hardhat, Sepolia Testnet, MetaMask           |
+| **Storage**   | IPFS, Pinata, Infura                                   |
+| **Other**     | dotenv, Ethers.js, CORS, Axios                         |
+
+---
+
+## ⚙️ Getting Started
+
+### 🔧 Prerequisites
+
+Make sure you have the following installed:
+- Node.js and npm
+- MetaMask browser extension
+- Hardhat for smart contract development
+- Infura or Pinata API key
+- Ethereum wallet funded with Sepolia testnet ETH
+
+---
+
+### 📥 Installation
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/shilu-123/dfa-evidence-storage.git
+cd dfa-evidence-storage
+🔭 Future Roadmap
+✅ Role-based Access for Investigators, Police, Legal Experts
+
+🔐 Advanced Encryption with DFA-AOKGE + Multi-Key Homomorphic Encryption
+
+📊 Chain-of-Custody Visualization Dashboard
+
+☁️ Filecoin / Arweave for Permanent Evidence Storage
+
+🪪 eKYC Integration using Aadhaar or DigiLocker
+
+🏆 Hackathon Impact
+This project was developed as part of CodeClash Hackathon 2025 and selected as a winning solution for its innovation in combining Web3 with Digital Forensics.
+
 
 
 

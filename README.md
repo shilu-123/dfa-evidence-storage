@@ -79,33 +79,16 @@ Make sure you have the following installed:
 ---
 
 ### 📥 Installation
-2. Install Dependencies
-Frontend
+## 📥 Installation & Setup
 
+### 1. Install Frontend Dependencies
 
-cd frontend
-npm install
-Backend
-
-
+2. Install Backend Dependencies
 cd ../backend
 npm install
-Smart Contracts
 
 
-cd ../contract
-npm install
-🧪 Running the Application
-✅ Start Backend Server
 
-cd backend
-npm start
-✅ Deploy Smart Contract on Sepolia
-
-cd ../contract
-npx hardhat compile
-npx hardhat run scripts/deploy.js --network sepolia
-After deployment, copy the contract address and ABI to frontend/src/constants/.
 
 ✅ Start Frontend App
 

@@ -1,129 +1,154 @@
 # 🛡️ DFA Evidence Storage - Web3-Based Digital Forensics System
 
-Secure, Decentralized & Verifiable Digital Evidence Management built on Blockchain and IPFS.
+Secure, Decentralized & Verifiable Digital Evidence Management using Ethereum and IPFS.
 
-![DFA Evidence Banner](./assets/banner.png) <!-- Optional: Add a banner image -->
+---
+
+## 📑 Table of Contents
+
+- [📌 About the Project](#-about-the-project)
+- [💡 Problem Statement](#-problem-statement)
+- [✅ Solution Highlights](#-solution-highlights)
+- [🚀 Key Features](#-key-features)
+- [🧱 Tech Stack](#-tech-stack)
+- [📥 Installation & Setup](#-installation--setup)
+- [🧪 Running the Application](#-running-the-application)
+- [🔐 .env Configuration](#-env-configuration)
+- [📈 Future Roadmap](#-future-roadmap)
+- [🏆 Hackathon Impact](#-hackathon-impact)
+- [🙌 Acknowledgements](#-acknowledgements)
+- [👩‍💻 About the Developer](#-about-the-developer)
+- [📄 License](#-license)
 
 ---
 
 ## 📌 About the Project
 
-In traditional digital forensic systems, digital evidence is often stored in centralized servers, making it vulnerable to tampering, unauthorized access, and single points of failure. These limitations can compromise legal investigations and the credibility of evidence in court.
+**DFA Evidence Storage** is a decentralized digital forensics system built using Web3 technologies. The application ensures that any uploaded digital evidence is:
+- 📁 Immutable (via IPFS)
+- ⛓️ Timestamped and stored on the blockchain (Ethereum Sepolia)
+- 🔐 Securely accessed by verified investigators (via MetaMask)
 
-**DFA Evidence Storage** is a decentralized application (dApp) designed to revolutionize digital evidence management using Web3 technologies. It leverages:
-- **IPFS** for decentralized, immutable file storage
-- **Ethereum Smart Contracts** (Sepolia Testnet) for transparent and tamper-proof logging
-- **MetaMask** for wallet-based user authentication
+This project aims to **modernize legal evidence workflows** by bringing **transparency, trust, and tamper-resistance** to digital forensic records.
 
 ---
 
 ## 💡 Problem Statement
 
-Digital forensic evidence stored in centralized systems is vulnerable to tampering, loss, and unauthorized access, making it unreliable in legal proceedings. There's a need for a secure, decentralized, and verifiable storage solution.
+Traditional digital forensic systems face serious challenges:
+- ❌ Evidence stored on centralized servers is vulnerable to tampering, unauthorized access, or deletion.
+- ❌ Lack of transparency regarding chain-of-custody.
+- ❌ No public audit trail for evidence authenticity or timestamp verification.
 
 ---
 
 ## ✅ Solution Highlights
 
-- 🔐 **MetaMask-Based Authentication**  
-  Ensures only verified users can interact with the system.
-
-- 📤 **Secure Evidence Upload**  
-  Evidence files are uploaded to IPFS using Pinata or Infura.
-
-- ⛓️ **Blockchain Record Keeping**  
-  Stores the IPFS hash + timestamp on Ethereum Sepolia via smart contracts.
-
-- 🔍 **Proof of Integrity**  
-  Verify any uploaded file’s hash and storage time using public blockchain.
-
-- 🧾 **Transparent Audit Trail**  
-  Every transaction is logged on-chain and viewable by the public.
+DFA Evidence Storage addresses the above issues through:
+- **Decentralized File Storage (IPFS)**: Ensures immutability.
+- **Blockchain Timestamps**: Record proof-of-existence using smart contracts.
+- **MetaMask Integration**: Verifies identity and access rights securely.
+- **Public Audit Trail**: Any uploaded file’s authenticity can be verified via Ethereum explorers.
 
 ---
 
 ## 🚀 Key Features
 
-- 🧑‍💻 Decentralized Authentication via MetaMask
-- 📁 Upload & Register Evidence Files
-- 🧬 IPFS Storage via Pinata/Infura
-- ⛓️ Ethereum Smart Contract Logging
-- 🧠 Verifiable Hash & Timestamp Proof
-- 📜 Transparent & Tamper-Proof Audit Trail
+- 🔐 MetaMask Wallet Authentication
+- 📤 Upload Digital Evidence Files
+- 📦 IPFS-based Decentralized Storage
+- ⛓️ Smart Contract Logging (Sepolia Testnet)
+- 📅 Blockchain Timestamping & Hash Storage
+- 🔍 Evidence Integrity Verification via Hash Lookup
+- 📜 Transparent Public Record of Uploads
 
 ---
 
-## 🧱 Built With
+## 🧱 Tech Stack
 
-| Layer         | Technologies Used                                     |
-|---------------|--------------------------------------------------------|
-| **Frontend**  | React.js, Web3.js                                      |
-| **Backend**   | Node.js, Express.js                                    |
-| **Blockchain**| Solidity, Hardhat, Sepolia Testnet, MetaMask           |
-| **Storage**   | IPFS, Pinata, Infura                                   |
-| **Other**     | dotenv, Ethers.js, CORS, Axios                         |
-
----
-
-## ⚙️ Getting Started
-
-### 🔧 Prerequisites
-
-Make sure you have the following installed:
-- Node.js and npm
-- MetaMask browser extension
-- Hardhat for smart contract development
-- Infura or Pinata API key
-- Ethereum wallet funded with Sepolia testnet ETH
+| Layer         | Technologies Used                                      |
+|---------------|---------------------------------------------------------|
+| **Frontend**  | React.js, Web3.js                                       |
+| **Backend**   | Node.js, Express.js                                     |
+| **Blockchain**| Solidity, Hardhat, Ethereum (Sepolia), MetaMask         |
+| **Storage**   | IPFS (via Pinata or Infura)                             |
+| **Environment** | .env files for secrets and keys                       |
 
 ---
 
-### 📥 Installation
 ## 📥 Installation & Setup
 
-### 1. Install Frontend Dependencies
-
-2. Install Backend Dependencies
-cd ../backend
-npm install
-
-
-
-
-✅ Start Frontend App
-
-cd ../frontend
-npm start
-🔐 .env Configuration
-Create a .env file in the relevant folders:
-
-/backend/.env
-
-PINATA_API_KEY=your_pinata_api_key
-PINATA_SECRET_API_KEY=your_pinata_secret
-/contract/.env
-
-PRIVATE_KEY=your_metamask_wallet_private_key
-INFURA_API_KEY=your_infura_project_id
-#### 1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/shilu-123/dfa-evidence-storage.git
 cd dfa-evidence-storage
-🔭 Future Roadmap
-✅ Role-based Access for Investigators, Police, Legal Experts
+2. Install Dependencies
+Frontend
+cd frontend
+npm install
+Backend
 
-🔐 Advanced Encryption with DFA-AOKGE + Multi-Key Homomorphic Encryption
+bash
+Copy code
+cd ../backend
+npm install
+Smart Contracts
 
-📊 Chain-of-Custody Visualization Dashboard
+bash
+Copy code
+cd ../contract
+npm install
+🧪 Running the Application
+✅ Start Backend Server
+bash
+Copy code
+cd backend
+npm start
+✅ Deploy Smart Contract (Sepolia Testnet)
+bash
+Copy code
+cd ../contract
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network sepolia
+After deployment, update your contract address and ABI in:
+frontend/src/constants/index.js
 
-☁️ Filecoin / Arweave for Permanent Evidence Storage
+✅ Start Frontend App
+bash
+Copy code
+cd ../frontend
+npm start
+🔐 .env Configuration
+/backend/.env
+env
+Copy code
+PINATA_API_KEY=your_pinata_api_key
+PINATA_SECRET_API_KEY=your_pinata_secret
+/contract/.env
+env
+Copy code
+PRIVATE_KEY=your_metamask_wallet_private_key
+INFURA_API_KEY=your_infura_project_id
+📈 Future Roadmap
+✅ Role-Based Access (Investigator, Admin, Court Authority)
 
-🪪 eKYC Integration using Aadhaar or DigiLocker
+🔐 Integration of Multi-Key Homomorphic Encryption (AOKGE Model)
+
+📊 Visual Chain-of-Custody Timeline
+
+☁️ Filecoin / Arweave Long-Term Archival Storage
+
+🪪 Aadhaar or eKYC-Based Real Identity Binding
 
 🏆 Hackathon Impact
-This project was developed as part of CodeClash Hackathon 2025 and selected as a winning solution for its innovation in combining Web3 with Digital Forensics.
+This project was built as a winning solution for CodeClash Hackathon 2025, addressing a critical gap in digital forensic systems.
+It impressed judges for its combination of blockchain, decentralization, and security applied to a real-world legal need.
 
+🙌 Acknowledgements
+Inspired by research on DFA-AOKGE (Digital Forensic Authentication with Optimal Key Generation & Encryption).
 
+Ethereum, Hardhat, Pinata, and IPFS documentation.
 
+CodeClash 2025 organizing committee and mentors.
 

@@ -79,7 +79,65 @@ Make sure you have the following installed:
 ---
 
 ### 📥 Installation
+2. Install Dependencies
+Frontend
 
+bash
+Copy
+Edit
+cd frontend
+npm install
+Backend
+
+bash
+Copy
+Edit
+cd ../backend
+npm install
+Smart Contracts
+
+bash
+Copy
+Edit
+cd ../contract
+npm install
+🧪 Running the Application
+✅ Start Backend Server
+bash
+Copy
+Edit
+cd backend
+npm start
+✅ Deploy Smart Contract on Sepolia
+bash
+Copy
+Edit
+cd ../contract
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network sepolia
+After deployment, copy the contract address and ABI to frontend/src/constants/.
+
+✅ Start Frontend App
+bash
+Copy
+Edit
+cd ../frontend
+npm start
+🔐 .env Configuration
+Create a .env file in the relevant folders:
+
+/backend/.env
+env
+Copy
+Edit
+PINATA_API_KEY=your_pinata_api_key
+PINATA_SECRET_API_KEY=your_pinata_secret
+/contract/.env
+env
+Copy
+Edit
+PRIVATE_KEY=your_metamask_wallet_private_key
+INFURA_API_KEY=your_infura_project_id
 #### 1. Clone the Repository
 
 ```bash
